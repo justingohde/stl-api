@@ -20,8 +20,12 @@ function getStlData(stlFile) {
             value: stl.area,
             unit: 'm'
         },
-        otherData: {
-            name: stl.name
+        centerOfMass: {
+            value: stl.centerOfMass,
+            unit: 'mm'
+        },
+        otherInfo: {
+          name: stlFile
         }
     };
 
