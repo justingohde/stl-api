@@ -10,7 +10,7 @@ function getStlData(stlFile) {
         weight: {
             value: stl.weight,
             unit: 'gm',
-            converted: stl.weight * 0.96
+            converted: stl.weight * 0.96153846153
         },
         boundingBox: {
             value: stl.boundingBox,
