@@ -1,7 +1,7 @@
 const NodeStl = require("node-stl");
 
 function getStlData(stlFile) {
-    const stl = new NodeStl(stlFile);
+    const stl = new NodeStl(stlFile, {density: 1.00});
     const stlData = {
         volume: {
             value: stl.volume,
@@ -10,7 +10,7 @@ function getStlData(stlFile) {
         weight: {
             value: stl.weight,
             unit: 'gm',
-            converted: stl.weight * 0.96153846153
+            converted: stl.weight * 1
         },
         boundingBox: {
             value: stl.boundingBox,
